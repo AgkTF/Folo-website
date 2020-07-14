@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://db.onlinewebfonts.com/c/6061c980f1f3f9420e1829c57a44cd23?family=Gilroy + Heavy");
+@import url("https://db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display");
 
 // colors
 $blue: #3740ff;
+$red: #ff014e;
+$light: rgba(71, 77, 255, 0.03);
+$text-red: #ff014e;
 
 html {
   max-width: 1366px;
@@ -77,10 +81,128 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    z-index: 1000;
 
     .intro-text {
       font-family: "Gilroy Heavy";
       font-size: 4.75rem;
+    }
+  }
+  .intro-image {
+    position: relative;
+    right: 8rem;
+    top: 3rem;
+  }
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+
+  .prices-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4em;
+
+    .prices-title {
+      font-family: "Gilroy Heavy";
+      font-size: 2.375rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 49px;
+    }
+
+    .prices-trial {
+      font-family: "SF Pro Display";
+      font-weight: bold;
+      font-size: 14px;
+      color: $blue;
+      text-decoration: underline;
+    }
+
+    .prices-date {
+      font-family: "SF Pro Display";
+      font-size: 18px;
+      color: $red;
+      line-height: 24px;
+    }
+
+    .prices-details {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 25px;
+  margin-top: 6.5rem;
+
+  .category {
+    border-radius: 35px;
+    background: $light;
+    text-align: center;
+
+    .discount {
+      background: $blue;
+      color: white;
+      font-weight: bolder;
+      font-family: "Poppins", sans-serif;
+      width: 85px;
+      height: 33px;
+      border-radius: 1.1rem;
+      margin: 2rem auto 1rem;
+      line-height: 33px;
+    }
+
+    .categories-followers {
+      font-size: 1.1rem;
+      font-family: "SF Pro Display";
+    }
+
+    .big-red {
+      font-family: "SF Pro Display";
+      font-weight: bolder;
+      font-size: 1.6rem;
+      color: $text-red;
+      margin-bottom: 0.75rem;
+    }
+
+    hr {
+      width: 90%;
+      border: 1px solid #707070;
+      opacity: 10%;
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      font-family: "SF Pro Display";
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.6rem;
+      color: rgba(8, 9, 64, 0.8);
+      list-style: inside url(./images/ul-dot.svg);
+      text-align: start;
+      margin-bottom: 2.25rem;
+    }
+
+    .buy-btn {
+      height: 43px;
+      width: 155px;
+      outline: none;
+      border: none;
+      border-radius: 24px;
+      background: transparent;
+      border: 2px solid $blue;
+      color: $blue;
+      font-family: "poppins";
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 2rem;
     }
   }
 }
