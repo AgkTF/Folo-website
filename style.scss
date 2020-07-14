@@ -4,6 +4,7 @@
 
 // colors
 $blue: #3740ff;
+$btn-blue: #474dff;
 $red: #ff014e;
 $light: rgba(71, 77, 255, 0.03);
 $text-red: #ff014e;
@@ -141,11 +142,13 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 0 25px;
   margin-top: 6.5rem;
+  align-items: center;
 
   .category {
     border-radius: 35px;
     background: $light;
     text-align: center;
+    height: 460px;
 
     .discount {
       background: $blue;
@@ -164,7 +167,7 @@ main {
       font-family: "SF Pro Display";
     }
 
-    .big-red {
+    .cat-price {
       font-family: "SF Pro Display";
       font-weight: bolder;
       font-size: 1.6rem;
@@ -183,7 +186,7 @@ main {
       font-family: "SF Pro Display";
       font-weight: 600;
       font-size: 12px;
-      line-height: 1.6rem;
+      line-height: 2rem;
       color: rgba(8, 9, 64, 0.8);
       list-style: inside url(./images/ul-dot.svg);
       text-align: start;
@@ -198,11 +201,67 @@ main {
       border-radius: 24px;
       background: transparent;
       border: 2px solid $blue;
-      color: $blue;
+      color: $btn-blue;
       font-family: "poppins";
       font-size: 10px;
       font-weight: 600;
       margin-bottom: 2rem;
+    }
+  }
+
+  .category-blue {
+    border-radius: 36px;
+    background: $btn-blue;
+    text-align: center;
+    width: 270px;
+    box-shadow: 5px -4px 16px 2px rgba(224, 217, 224, 1);
+    height: 535px;
+
+    img.green-tick {
+      position: relative;
+      right: -107px;
+      top: -1px;
+    }
+
+    .discount-blue {
+      transform: scale(1.25);
+      margin-top: 0;
+    }
+
+    .followers-blue {
+      font-size: 1.25rem;
+      font-family: "SF Pro Display";
+      font-weight: normal;
+      color: white;
+      margin: 0;
+    }
+
+    .price-blue {
+      font-size: 1.8rem;
+      color: white;
+      margin: 8px 0 13px 0;
+    }
+
+    .hr-blue {
+      border: 1px solid #ffffff;
+      opacity: 25%;
+    }
+
+    ul {
+      line-height: 2.5rem;
+      font-size: 13px;
+      color: #ffffffcc;
+      font-weight: 300;
+      list-style: inside url(./images/ul-dot-white.svg);
+    }
+
+    .btn-blue {
+      height: 48px;
+      width: 175px;
+      color: $blue;
+      font-size: 12px;
+      background: white;
+      border: none;
     }
   }
 }
