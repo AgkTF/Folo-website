@@ -360,3 +360,54 @@ main {
     }
   }
 }
+
+.ratings {
+  max-width: 1088px;
+  margin: 12rem auto 5rem auto;
+  display: flex;
+
+  .ratings__title {
+    font-family: "Gilroy Heavy";
+    font-size: 2.25rem;
+    margin-top: 0;
+  }
+
+  .ratings__right {
+    display: flex;
+    flex-direction: column;
+
+    .ratings__cards {
+      display: flex;
+      justify-content: space-between;
+      .ratings__card:first-child {
+        margin-right: 20px;
+      }
+
+      .ratings__card {
+        background: #ffffff;
+        border-radius: 40px;
+        box-shadow: 1px 0px 20px 1px #e0d9e05c;
+        padding: 30px 30px 30px 30px;
+        font-size: 13px;
+
+        .ratings__card__review {
+          font-family: "SF Pro Display";
+          font-style: italic;
+        }
+
+        .ratings__card__reviewer {
+          font-family: "poppins";
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .trial-btn--idigic {
+      width: 242px;
+      margin-top: 45px;
+      font-family: "poppins";
+      font-size: 18px;
+    }
+  }
+}
