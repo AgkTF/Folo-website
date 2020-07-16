@@ -333,7 +333,7 @@ main {
   }
 }
 
-.idigic {
+.idigic--desktop {
   max-width: 1088px;
   margin: 0 auto;
   display: flex;
@@ -408,45 +408,72 @@ main {
       font-size: 18px;
     }
   }
+}
 
-  .footer--desktop {
-    padding: 120px 140px 50px 140px;
-    margin: 0 auto;
-    background: $dark-blue;
-    color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    font-family: "SF Pro Display";
+.footer--desktop {
+  padding: 120px 140px 50px 140px;
+  margin: 0 auto;
+  background: $dark-blue;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-family: "SF Pro Display";
 
-    .footer__innerList {
-      list-style: none;
-      padding-left: 0;
+  .footer__innerList {
+    list-style: none;
+    padding-left: 0;
 
-      li {
-        margin-bottom: 2em;
-        font-size: 13px;
-      }
-    }
-
-    p.footer__title {
-      font-size: 16px;
-      color: #ffffff;
-      text-transform: uppercase;
-      margin-bottom: 3.25em;
+    li {
+      margin-bottom: 2em;
+      font-size: 13px;
     }
   }
 
-  // .footer--mobile {
-  //   display: none;
-  // }
+  p.footer__title {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 3.25em;
+  }
 }
+
+// .footer--mobile {
+//   display: none;
+// }
 
 @media screen and (max-width: 768px) {
   html,
   body {
     min-width: 450px;
     margin: 0 auto;
+  }
+
+  .idigic--desktop {
+    display: none;
+  }
+
+  .idigic--mobile {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+
+    .idigic__title {
+      font-family: "Gilroy Heavy";
+      font-size: 2.25rem;
+      margin-top: 0;
+    }
+
+    .idigic__innerText {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      line-height: 2em;
+    }
+
+    .trial-btn--idigic {
+      margin-top: 30px;
+    }
   }
 
   .ratings {
