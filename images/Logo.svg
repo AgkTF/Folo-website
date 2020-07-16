@@ -2,6 +2,6 @@
   <g id="Logo" transform="translate(-140 -100)">
     <rect id="Rectangle_143" data-name="Rectangle 143" width="39" height="39" rx="19.5" transform="translate(160 104)" fill="#ffc432"/>
     <rect id="Rectangle_142" data-name="Rectangle 142" width="39" height="39" rx="19.5" transform="translate(140 104)" fill="#ff014e"/>
-    <text id="Folo" transform="translate(241 138)" fill="#3740ff" font-size="38" font-family="Gilroy-Black, Gilroy ☞" font-weight="800"><tspan x="-36.955" y="0">F</tspan><tspan y="0" fill="#ffc432">o</tspan><tspan y="0">l</tspan><tspan y="0" fill="#ff014e">o</tspan></text>
+    <text id="Folo" transform="translate(241 138)" fill="#3740ff" font-size="38" font-family="Gilroy-Black, Gilroy Heavy" font-weight="800"><tspan x="-36.955" y="0">F</tspan><tspan y="0" fill="#ffc432">o</tspan><tspan y="0">l</tspan><tspan y="0" fill="#ff014e">o</tspan></text>
   </g>
 </svg>
