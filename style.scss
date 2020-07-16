@@ -315,9 +315,6 @@ main {
     }
   }
   .reasons__right {
-    // .right__illust {
-    //   margin-top: 65px;
-    // }
     margin-top: -40px;
 
     .right__title {
@@ -447,6 +444,28 @@ main {
   body {
     min-width: 450px;
     margin: 0 auto;
+  }
+
+  .reasons {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .left__pattern {
+      display: none;
+    }
+
+    .reasons__right {
+      .right__illust {
+        position: relative;
+        left: 165px;
+        bottom: 50px;
+      }
+
+      .right__content {
+        margin-top: -40px;
+      }
+    }
   }
 
   .idigic--desktop {
