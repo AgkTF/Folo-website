@@ -449,12 +449,30 @@ main {
     margin: 0 auto;
   }
 
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+
+    .ratings__cards {
+      display: flex;
+      flex-direction: column;
+
+      .ratings__card:first-child {
+        margin-bottom: 20px;
+        margin-right: 0 !important;
+      }
+    }
+    .trial-btn--idigic {
+      align-self: center;
+    }
+  }
+
   .footer--desktop {
     display: none;
   }
 
   .footer--mobile {
-    max-width: 100%;
     padding: 60px;
     margin: 0 auto;
     background: $dark-blue;
@@ -471,8 +489,6 @@ main {
       display: flex;
       margin-top: 45px;
       justify-content: space-between;
-      .footer__left {
-      }
 
       .footer__innerList {
         list-style: none;
