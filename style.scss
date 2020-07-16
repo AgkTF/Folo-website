@@ -10,7 +10,6 @@ $light: rgba(71, 77, 255, 0.03);
 $text-red: #ff014e;
 
 html {
-  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -262,6 +261,76 @@ main {
       font-size: 12px;
       background: white;
       border: none;
+    }
+  }
+}
+
+.reasons {
+  max-width: 1366px;
+  background: $btn-blue;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  grid-gap: 0 10rem;
+  color: white;
+  margin: 10rem auto;
+  justify-content: space-between;
+  padding: 106px 139px 158px 139px;
+
+  .reasons__left {
+    height: 450px;
+
+    .left__pattern {
+      margin-top: 75px;
+    }
+    .reasons__title {
+      font-family: "Gilroy Heavy";
+      font-size: 2.375rem;
+    }
+    .reasons__subtitle {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      margin-top: 1.75rem;
+      margin-bottom: 1.625rem;
+      line-height: 1.6em;
+    }
+    .reasons__badge {
+      text-align: center;
+      background: hsla(0, 0%, 100%, 0.2);
+      border-radius: 1rem;
+      font-size: 1rem;
+      font-family: "SF Pro Display";
+      font-weight: bold;
+      margin-bottom: 13px;
+      width: 271px;
+      height: 51px;
+      line-height: 51px;
+    }
+
+    .reasons__ul {
+      font-family: "SF Pro Display";
+      list-style: none;
+      line-height: 16px;
+
+      li {
+        margin: 1.25rem 0;
+      }
+    }
+  }
+  .reasons__right {
+    // .right__illust {
+    //   margin-top: 65px;
+    // }
+    margin-top: -40px;
+
+    .right__title {
+      font-family: "Gilroy Heavy";
+      font-size: 1.5rem;
+    }
+
+    .right__subtitle {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      line-height: 1.5em;
     }
   }
 }
