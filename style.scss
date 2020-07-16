@@ -334,3 +334,29 @@ main {
     }
   }
 }
+
+.idigic {
+  max-width: 1088px;
+  margin: 0 auto;
+  display: flex;
+
+  .idigic__content {
+    margin-left: 3.75rem;
+
+    .idigic__title {
+      font-family: "Gilroy Heavy";
+      font-size: 2.25rem;
+      margin-top: 0;
+    }
+
+    .idigic__innerText {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      line-height: 2em;
+    }
+
+    .trial-btn--idigic {
+      margin-top: 30px;
+    }
+  }
+}
