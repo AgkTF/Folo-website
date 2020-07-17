@@ -502,12 +502,14 @@ main {
 
       .intro-text {
         font-family: "Gilroy Heavy";
-        font-size: 3.25rem;
+        font-size: 3rem;
+        margin: 0;
+        z-index: 1000;
       }
       .intro-image {
         position: relative;
         overflow-y: hidden;
-        right: 6rem;
+        top: -65px;
 
         img {
           width: 100%;
@@ -516,6 +518,11 @@ main {
 
       .trial-btn {
         align-self: center;
+        margin-top: -60px;
+      }
+
+      .big-btn {
+        transform: scale(1.3);
       }
     }
   }
@@ -541,10 +548,11 @@ main {
 
     .prices-title {
       font-family: "Gilroy Heavy";
-      font-size: 2.375rem;
+      font-size: 1.75rem;
       display: flex;
       flex-direction: column;
-      line-height: 49px;
+      // line-height: 49px;
+      margin: 0px;
     }
 
     .prices-trial {
@@ -553,6 +561,7 @@ main {
       font-size: 14px;
       color: $blue;
       text-decoration: underline;
+      margin-bottom: 2em;
     }
 
     .prices-date {
@@ -560,6 +569,7 @@ main {
       font-size: 18px;
       color: $red;
       line-height: 24px;
+      margin-bottom: 0;
     }
 
     .prices-details {
@@ -575,10 +585,59 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem 1rem;
     padding: 2rem;
+    margin-top: 0;
 
     .category {
       ul {
         padding-left: 15px;
+      }
+
+      .buy-btn {
+        width: 10em;
+        height: 4em;
+        font-size: 12px;
+      }
+    }
+
+    .category-blue {
+      display: none;
+    }
+
+    .category-blue--mobile {
+      background: $btn-blue;
+      box-shadow: 5px -4px 16px 2px rgba(224, 217, 224, 1);
+
+      img.green-tick {
+        position: relative;
+        right: -63px;
+        top: -1px;
+      }
+
+      .discount {
+        margin-top: 0;
+      }
+
+      .categories-followers {
+        color: white;
+      }
+      .cat-price {
+        color: white;
+      }
+      hr {
+        border: 1px solid #ffffff;
+        opacity: 25%;
+      }
+
+      ul {
+        color: #ffffffcc;
+        list-style: inside url(./images/ul-dot-white.svg);
+        margin-bottom: 0.5rem;
+      }
+
+      .buy-btn {
+        color: $blue;
+        background: white;
+        border: none;
       }
     }
   }
@@ -587,9 +646,19 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin: 3rem auto;
 
     .left__pattern {
       display: none;
+    }
+
+    .reasons__left {
+      .reasons__title {
+        font-size: 2rem;
+      }
+      .reasons__subtitle {
+        font-size: 1rem;
+      }
     }
 
     .reasons__right {
@@ -601,6 +670,10 @@ main {
 
       .right__content {
         margin-top: -40px;
+      }
+
+      .right__subtitle {
+        font-size: 1rem;
       }
     }
   }
@@ -617,13 +690,13 @@ main {
 
     .idigic__title {
       font-family: "Gilroy Heavy";
-      font-size: 2.25rem;
-      margin-top: 0;
+      font-size: 1.9rem;
+      margin: 0;
     }
 
     .idigic__innerText {
       font-family: "SF Pro Display";
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 2em;
     }
 
@@ -636,11 +709,17 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
+    margin: 4rem auto;
+    font-size: 2rem;
 
     .ratings__cards {
       display: flex;
       flex-direction: column;
 
+      .ratings__card__review,
+      .ratings__card__reviewer {
+        font-size: 1rem;
+      }
       .ratings__card:first-child {
         margin-bottom: 20px;
         margin-right: 0 !important;
