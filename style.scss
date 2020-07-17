@@ -276,6 +276,7 @@ main {
 
   .reasons__left {
     height: 450px;
+    z-index: 1000;
 
     .left__pattern {
       margin-top: 75px;
@@ -439,11 +440,25 @@ main {
 //   display: none;
 // }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   html,
   body {
     min-width: 450px;
     margin: 0 auto;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem 1rem;
+    padding: 2rem;
+
+    .category {
+      ul {
+        padding-left: 15px;
+      }
+    }
   }
 
   .reasons {
@@ -458,7 +473,7 @@ main {
     .reasons__right {
       .right__illust {
         position: relative;
-        left: 165px;
+        left: 120px;
         bottom: 50px;
       }
 
