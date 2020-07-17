@@ -70,12 +70,12 @@ main {
   margin: 0 auto;
 }
 
-.intro {
+.intro--desktop {
   display: flex;
   justify-content: space-between;
   margin-top: 3.5rem;
 
-  .intro-content {
+  .intro__content {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -93,7 +93,7 @@ main {
   }
 }
 
-.prices {
+.prices--desktop {
   display: flex;
   align-items: center;
 
@@ -445,6 +445,81 @@ main {
   body {
     min-width: 450px;
     margin: 0 auto;
+  }
+  .intro__content--mobile {
+    .intro__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      z-index: 1000;
+
+      .intro-text {
+        font-family: "Gilroy Heavy";
+        font-size: 4.75rem;
+      }
+      .intro-image {
+        position: relative;
+        overflow-y: hidden;
+        right: 6rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .trial-btn {
+        align-self: center;
+      }
+    }
+  }
+
+  .intro--desktop {
+    display: none;
+  }
+
+  .prices--desktop {
+    display: none;
+  }
+
+  .prices--mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .prices-image img {
+      width: 90%;
+      position: relative;
+      left: 4rem;
+    }
+
+    .prices-title {
+      font-family: "Gilroy Heavy";
+      font-size: 2.375rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 49px;
+    }
+
+    .prices-trial {
+      font-family: "SF Pro Display";
+      font-weight: bold;
+      font-size: 14px;
+      color: $blue;
+      text-decoration: underline;
+    }
+
+    .prices-date {
+      font-family: "SF Pro Display";
+      font-size: 18px;
+      color: $red;
+      line-height: 24px;
+    }
+
+    .prices-details {
+      font-family: "SF Pro Display";
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   .categories {
