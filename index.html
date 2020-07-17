@@ -10,21 +10,43 @@
     <!-- <header>
       <img src="images/grafiti-with-text.svg" alt="top banner" />
     </header>
-
+ -->
     <nav role="navigation">
-      <div class="navbar-brand">
-        <img src="images/Logo.png" alt="Folo logo" />
+      <div class="nav__container--upper">
+        <div class="navbar-brand">
+          <img src="images/Logo.png" alt="Folo logo" />
+        </div>
+
+        <button
+          class="hamburger hamburger--spin"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
 
-      <div class="navbar-menu">
-        <a href="" class="navbar-item">Home</a>
+      <div class="navbar-menu navbar-menu--mobile">
+        <!-- <a href="" class="navbar-item">Home</a>
         <a href="" class="navbar-item">Buy Instagram Likes</a>
         <a href="" class="navbar-item selected">Buy Instagram Followers</a>
         <a href="" class="navbar-item">Buy Instagram Views</a>
         <a href="" class="navbar-item">Contact Us</a>
-        <button class="trial-btn">FREE TRIAL</button>
+        <button class="trial-btn">FREE TRIAL</button> -->
+
+        <div class="mobile-menu mobile-menu--hidden">
+          <a href="" class="navbar-item">Home</a>
+          <a href="" class="navbar-item">Buy Instagram Likes</a>
+          <a href="" class="navbar-item selected">Buy Instagram Followers</a>
+          <a href="" class="navbar-item">Buy Instagram Views</a>
+          <a href="" class="navbar-item">Contact Us</a>
+          <button class="trial-btn">FREE TRIAL</button>
+        </div>
       </div>
-    </nav> -->
+    </nav>
 
     <main>
       <section class="intro">
@@ -49,7 +71,7 @@
         <div class="intro__content--mobile">
           <div class="intro__content">
             <p class="intro-text">
-              <span>Buy Real</span>
+              <span>Buy Real</span><br />
               <span>Instagram Followers</span>
             </p>
             <div class="intro-image">
@@ -445,5 +467,7 @@
         <button class="trial-btn footer__btn">FREE TRIAL</button>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
