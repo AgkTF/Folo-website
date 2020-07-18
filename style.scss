@@ -452,6 +452,7 @@ main {
 
 // Laptop and above media query
 @media screen and (min-width: 1024px) {
+  // @media screen and (min-width: 769px) {
   .intro {
     .intro__content--mobile {
       display: none;
@@ -493,6 +494,7 @@ main {
 
 // Tablet media query
 @media screen and (max-width: 1023px) {
+  // @media screen and (max-width: 768px) {
   html,
   body {
     min-width: 450px;
@@ -543,29 +545,34 @@ main {
       justify-content: start;
       z-index: 1000;
 
-      .intro-text {
-        font-family: "Gilroy Heavy";
-        font-size: 3rem;
-        margin: 0;
-        z-index: 1000;
+      .intro__left {
+        display: flex;
+        flex-direction: column;
+        .intro-text {
+          font-family: "Gilroy Heavy";
+          font-size: 3rem;
+          margin: 0;
+          z-index: 1000;
+        }
+        .trial-btn {
+          align-self: center;
+          margin-top: 80px;
+          z-index: 1000;
+        }
+
+        .big-btn {
+          transform: scale(1.3) translate(-10rem, 7rem);
+        }
       }
+
       .intro-image {
         position: relative;
         overflow-y: hidden;
-        top: -65px;
+        top: -120px;
 
         img {
           width: 100%;
         }
-      }
-
-      .trial-btn {
-        align-self: center;
-        margin-top: -60px;
-      }
-
-      .big-btn {
-        transform: scale(1.3);
       }
     }
   }
@@ -582,6 +589,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin-top: -6rem;
 
     .prices-image img {
       width: 90%;
@@ -657,9 +665,9 @@ main {
         top: -2px;
       }
 
-      .discount {
-        margin-top: 0;
-      }
+      // .discount {
+      //   margin-top: 0;
+      // }
 
       .categories-followers {
         color: white;
@@ -740,12 +748,17 @@ main {
 
     .idigic__innerText {
       font-family: "SF Pro Display";
-      font-size: 1rem;
+      font-size: 14px;
       line-height: 2em;
     }
 
     .trial-btn--idigic {
       margin-top: 30px;
+    }
+
+    .idigic__image {
+      width: 50%;
+      align-self: center;
     }
   }
 
@@ -755,22 +768,26 @@ main {
     padding: 2rem 2rem;
     margin: 4rem auto;
     font-size: 2rem;
+    .ratings__right {
+      width: 75%;
+      margin: 0 auto;
 
-    .ratings__cards {
-      display: flex;
-      flex-direction: column;
+      .ratings__cards {
+        display: flex;
+        flex-direction: column;
 
-      .ratings__card__review,
-      .ratings__card__reviewer {
-        font-size: 1rem;
+        .ratings__card__review,
+        .ratings__card__reviewer {
+          font-size: 1rem;
+        }
+        .ratings__card:first-child {
+          margin-bottom: 20px;
+          margin-right: 0 !important;
+        }
       }
-      .ratings__card:first-child {
-        margin-bottom: 20px;
-        margin-right: 0 !important;
+      .trial-btn--idigic {
+        align-self: center;
       }
-    }
-    .trial-btn--idigic {
-      align-self: center;
     }
   }
 
@@ -822,6 +839,14 @@ main {
 
   // Mobile media query
   @media screen and (max-width: 480px) {
+    .intro__content--mobile {
+      .intro__content {
+        .big-btn {
+          transform: scale(1.2) translate(-5rem, 4rem) !important;
+        }
+      }
+    }
+
     .categories {
       .category {
         ul {
@@ -833,6 +858,7 @@ main {
 
       .category-blue--mobile {
         img.green-tick {
+          position: relative;
           right: -63px;
           top: -1px;
         }
