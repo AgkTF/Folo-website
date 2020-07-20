@@ -11,12 +11,25 @@ $light: rgba(71, 77, 255, 0.03);
 $text-red: #ff014e;
 $dark-blue: #080940;
 
+@font-face {
+  font-family: "Gilroy Heavy";
+  src: url("https://db.onlinewebfonts.com/t/6061c980f1f3f9420e1829c57a44cd23.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0 auto;
 }
 
-// @media screen and (min-width: 769px) {
 header {
   background: $blue;
   display: flex;
@@ -70,6 +83,11 @@ nav {
   height: 42px;
   width: 129px;
   background: $blue;
+  cursor: pointer;
+
+  &:hover {
+    background: adjust-color($blue, $lightness: 4%);
+  }
 
   &.big-btn {
     transform: scale(1.5) translateX(22px);
@@ -90,7 +108,7 @@ main {
   .intro__content {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     z-index: 1000;
 
     .intro-text {
@@ -429,7 +447,7 @@ main {
   color: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   font-family: "SF Pro Display";
 
   .footer__innerList {
@@ -542,7 +560,7 @@ main {
     .intro__content {
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
       z-index: 1000;
 
       .intro__left {
